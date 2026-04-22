@@ -180,7 +180,7 @@ footer a{color:#ffffff;}
             <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
             <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Featured Project</a></li>
             <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
@@ -413,15 +413,10 @@ footer a{color:#ffffff;}
                 <h4 class="mb-2">TasteLocal</h4>
                 <div class="project-meta mb-3">Full Stack Web Application &middot; 2025</div>
                 <p>
-                    A platform that connects tourists with authentic local food experiences,
-                    enabling discovery of hawker stalls, home-cooks, and cultural food tours.
-                    Designed with a clean user flow, secure authentication, and a RESTful
-                    backend supporting listings, bookings, and user profiles.
+                    TasteLocal is an innovative digital marketplace revolutionizing how travelers and locals discover authentic culinary experiences. The platform seamlessly connects users to hidden gems—hawker stalls, passionate home-cooks, and immersive food tours—empowering small vendors and celebrating cultural diversity.
                 </p>
                 <p class="mb-3">
-                    Delivered as part of my Diploma in Full Stack Web Development, covering
-                    requirements analysis, solution architecture, data design, UX/UI,
-                    application development, and agile delivery.
+                    Engineered end-to-end with Django and MySQL, TasteLocal features robust user authentication, dynamic listings, real-time bookings, and a scalable RESTful API. The intuitive UI/UX, secure architecture, and data-driven design deliver a frictionless experience for thousands of users. This capstone project demonstrates advanced skills in solution architecture, full stack development, and the creation of impactful, production-ready web applications.
                 </p>
                 <div>
                     <span class="tech-tag">Python</span>
@@ -443,19 +438,19 @@ footer a{color:#ffffff;}
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="taste-local-1.png" alt="TasteLocal – Home and Top Experiences">
+                            <img src="taste-local-1.png" alt="TasteLocal – Home and Top Experiences" class="carousel-img-clickable">
                         </div>
                         <div class="carousel-item">
-                            <img src="taste-local-2.png" alt="TasteLocal – Explore Food Experiences">
+                            <img src="taste-local-2.png" alt="TasteLocal – Explore Food Experiences" class="carousel-img-clickable">
                         </div>
                         <div class="carousel-item">
-                            <img src="taste-local-3.png" alt="TasteLocal – Explore Vendors">
+                            <img src="taste-local-3.png" alt="TasteLocal – Explore Vendors" class="carousel-img-clickable">
                         </div>
                         <div class="carousel-item">
-                            <img src="taste-local-4.png" alt="TasteLocal – Additional View">
+                            <img src="taste-local-4.png" alt="TasteLocal – Additional View" class="carousel-img-clickable">
                         </div>
                         <div class="carousel-item">
-                            <img src="taste-local-5.png" alt="TasteLocal – Additional View">
+                            <img src="taste-local-5.png" alt="TasteLocal – Additional View" class="carousel-img-clickable">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#tasteLocalCarousel" data-bs-slide="prev">
@@ -520,7 +515,7 @@ footer a{color:#ffffff;}
                 <li><i class="bi bi-check-circle-fill"></i> Applications Development &middot; Oct 2025</li>
                 <li><i class="bi bi-check-circle-fill"></i> Business Needs Analysis &middot; Nov 2025</li>
                 <li><i class="bi bi-check-circle-fill"></i> Project Management &middot; Nov 2025</li>
-                <li><i class="bi bi-check-circle-fill"></i> Agile Project Management &middot; Nov 2025</li>
+                <!-- <li><i class="bi bi-check-circle-fill"></i> Agile Project Management &middot; Nov 2025</li> -->
                 <li><i class="bi bi-check-circle-fill"></i> Capstone Project &middot; Nov 2025</li>
             </ul>
         </div>
@@ -569,6 +564,28 @@ footer a{color:#ffffff;}
     </div>
 </footer>
 
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content bg-transparent border-0">
+            <button type="button" class="btn-close position-absolute end-0 top-0 m-3 z-3" data-bs-dismiss="modal" aria-label="Close"></button>
+            <img id="modalImage" src="" alt="Large preview" class="w-100 rounded shadow" style="max-height:80vh;object-fit:contain;background:#fff;">
+        </div>
+    </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Open image in modal on click
+document.querySelectorAll('.carousel-img-clickable').forEach(function(img) {
+    img.addEventListener('click', function() {
+        var modalImg = document.getElementById('modalImage');
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        var modal = new bootstrap.Modal(document.getElementById('imageModal'));
+        modal.show();
+    });
+});
+</script>
 </body>
 </html>
