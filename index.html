@@ -96,6 +96,42 @@ a:hover{color:var(--primary);}
     width:100%;height:220px;object-fit:cover;object-position:top;
 }
 .project-meta{color:var(--muted);font-size:14px;}
+
+/* PROJECT CAROUSEL */
+.project-carousel{
+    background:#f0f3f9;border:1px solid var(--line);border-radius:10px;
+    padding:18px;
+}
+.project-carousel .carousel-inner{border-radius:8px;overflow:hidden;background:#ffffff;}
+.project-carousel .carousel-item img{
+    width:100%;height:420px;object-fit:contain;object-position:center;
+    background:#ffffff;display:block;
+}
+.project-carousel .carousel-control-prev,
+.project-carousel .carousel-control-next{
+    width:32px;height:32px;top:50%;transform:translateY(-50%);
+    background:rgba(11,37,69,0.25);border-radius:50%;opacity:0;
+    margin:0 8px;transition:opacity 0.2s ease, background 0.2s ease;
+}
+.project-carousel:hover .carousel-control-prev,
+.project-carousel:hover .carousel-control-next{opacity:0.7;}
+.project-carousel .carousel-control-prev:hover,
+.project-carousel .carousel-control-next:hover{background:rgba(11,37,69,0.55);opacity:1;}
+.project-carousel .carousel-control-prev-icon,
+.project-carousel .carousel-control-next-icon{width:14px;height:14px;}
+.project-carousel .carousel-indicators{margin-bottom:-4px;}
+.project-carousel .carousel-indicators [data-bs-target]{
+    width:8px;height:8px;border-radius:50%;background:var(--primary);
+    border:none;opacity:0.25;margin:0 4px;
+}
+.project-carousel .carousel-indicators .active{opacity:0.85;}
+.project-carousel .carousel-caption{
+    position:static;padding:14px 4px 0;color:var(--muted);
+    text-align:center;font-size:13px;
+}
+@media (max-width: 576px){
+    .project-carousel .carousel-item img{height:260px;}
+}
 .tech-tag{
     display:inline-block;background:#eef2f9;color:var(--accent);
     border-radius:4px;padding:3px 10px;margin:3px 4px 3px 0;font-size:12px;font-weight:500;
@@ -383,16 +419,39 @@ footer a{color:#ffffff;}
                 </div>
             </div>
             <div class="col-lg-7">
-                <div class="row g-3">
-                    <div class="col-12">
-                        <img src="taste-local-1.png" alt="TasteLocal – Home" class="project-img" style="height:280px;">
+                <div id="tasteLocalCarousel" class="carousel slide project-carousel" data-bs-ride="carousel" data-bs-interval="4500">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#tasteLocalCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#tasteLocalCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#tasteLocalCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#tasteLocalCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#tasteLocalCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
                     </div>
-                    <div class="col-sm-6">
-                        <img src="taste-local-2.png" alt="TasteLocal – Listings" class="project-img">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="taste-local-1.png" alt="TasteLocal – Home and Top Experiences">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="taste-local-2.png" alt="TasteLocal – Explore Food Experiences">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="taste-local-3.png" alt="TasteLocal – Explore Vendors">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="taste-local-4.png" alt="TasteLocal – Additional View">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="taste-local-5.png" alt="TasteLocal – Additional View">
+                        </div>
                     </div>
-                    <div class="col-sm-6">
-                        <img src="taste-local-3.png" alt="TasteLocal – Detail" class="project-img">
-                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#tasteLocalCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#tasteLocalCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
