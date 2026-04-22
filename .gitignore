@@ -1,0 +1,13 @@
+# Personal / source files not intended for public hosting
+*.docx
+*.doc
+*.pdf
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
