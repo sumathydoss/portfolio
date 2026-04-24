@@ -1,4 +1,4 @@
-My name is Sumathy Mohan Doss, and I am a Senior Software Engineer and Full Stack Developer based in Singapore with over 20 years of professional experience. My core expertise lies in backend development, API integration, and microservices architecture, with a strong track record of delivering scalable, high-performance solutions across IT consulting, e-commerce, CRM, and customer service sectors.
+I previuosly worked as a Senior Software Engineer and Full Stack Developer based in Singapore with over 20 years of professional experience. My core expertise lies in backend development, API integration, and microservices architecture, with a strong track record of delivering scalable, high-performance solutions across IT consulting, e-commerce, CRM, and customer service sectors.
 
 I am highly proficient in .NET, C#, Python, and Microsoft Dynamics 365 Sales, with deep experience in system customization, plugin development, and process automation. I have successfully led API integration projects for clients such as Audio House, Toyota Financial Services, and Cycle & Carriage, and have maintained mission-critical platforms for organizations like the Law Society of Singapore and The New York Times.
 
@@ -7,3 +7,9 @@ In recent years, I have designed and implemented AI-powered solutions, including
 I hold a Diploma in Full Stack Web Development from Lithan Academy (2025), which has broadened my front-end and solution architecture skills through hands-on projects such as TasteLocal, a full stack digital marketplace platform. My technical toolkit includes .NET, C#, Python, Django, REST APIs, SQL Server, MySQL, Azure DevOps, Docker, and modern web technologies.
 
 I am passionate about building impactful software solutions that drive business value and am open to opportunities in full stack, backend, and solution engineering roles.
+
+
+I previuosly worked as a Senior software Engineer with over 20 years of professional experience. My with core expertise lies in backend development, API integration and microservices.
+In recent years I have designed and developed AI powered solution including AI chatbots integrated into messaging platforms like whatsapp, messenger and instagram
+I have upgraded myself as full stack web Developer with my recent Diploma course, this has broadened my frontend and solution architecture skills
+Coming to softskills, I am a strong Independant player and as well as a good team player. I take pride in taking ownership of the assigned projects and delivering it on time with high performance and scalablility.
